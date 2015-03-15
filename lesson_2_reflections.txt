@@ -12,6 +12,12 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	You can add files to the staging area as you finish working on them for a particular logical change.  When you are finished with a particular change, you can then use git diff, with no arguments, to make sure that all files you modified for a particular change are included in the staging area for commit, thuse preventing a second commit to be necessary to pick up forgotten changes.  
+
+	Likewise, you can make sure that no file that is NOT part of the logical change is in the staging area and about to be committed.  If so, then you can do a git reset <filename> to remove that file. 
+
+	And finally, you can use git diff --staged to compare the staged files with the most recent commit, and visually scan for any possible changes that are not part of this logical change.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
