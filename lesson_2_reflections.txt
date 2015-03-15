@@ -21,6 +21,8 @@ change?
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	Branches would be useful when you are trying something experimental, and you do not want to foul up the main baseline with the change.  Also, if you are thinking to make a new version with lots of significant changes, but you need to maintain an older version for support purposes (bug fixes, etc.) then the new version could be a branch, or the old version could be a branch off of the master.  Basically each version you release could be a branch, and then if bug fixes in an older version need to be made, the older branch could be checked out.
+	
 How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
