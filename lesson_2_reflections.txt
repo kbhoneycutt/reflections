@@ -1,0 +1,24 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	using git init will create all the meta files and data necessary to track the files in the current directory in git.  It is necessary to do this as nothing will set up the directory to be tracked by git until this is done.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	The staging area holds files that have not yet been comitted to the repository, but whose work has presumably been finished.  The working directory holds files that are currently being worked on, files added to the staging area, and files that are also already in the repository.  
+
+	The value in this is that the staging area can have files that you have finished, and are ready to send to the repository.  You could presumably work on those files more to experiment with a change you are about to commit.  If your experimentation fails, you could presumably remove that file from the staging area.  The staging area is also useful in that you know what you have finished working on and helps you keep track of what files needed to be committed.  When you finish working on a file, you simply add it to the staging area.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+manually?
