@@ -1,0 +1,45 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    By Using diff, I was able to see only the code that had changed
+    between two versions of the file.  In this way, I was able to
+    focus in on exactly where the bug was introduced, because lines that did not change could be ignored.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    1. you can experiment, and then fall back to a previous version if you don't like the results of the new version.
+
+    2. If there is a complaint that a certain feature was lost, you can look back in the history until you find the point that the code was removed, and then restore it.  This is basically the ability to restore code that may have been accidentally lost, without having to try to restore it from memory.
+
+    3. If the current solution to a lingering problem is not working, and you have a potential new solution in mind, you can look back at the history and see if your solution has been tried in the past.  If it has and it failed, you can determine there may be no need to try your solution.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The pros are that the commits are under the developer's control, meaning they will be functioning, logically related changes.
+
+    On the other hand, the con of having to do a manual commit is that it is tempting to fix multiple small things without making a commit. For example a programmer may fix a small bug, then has time to fix another one but doesn't want to "waste" time making a commit in between each bug.  And another problem is that the programmer may forget to make a commit at all.  Then they fixed a bug and it never got saved, and could potentially be lost if their local copy is lost.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git is used for tracking versions of software systems.  A software system is not a single file in isolation, but requires all files to work together.  So for that reason it is important to know the state of all of the files as of that commit.
+
+    For file-oriented things like Google Docs, a collection of files is not usually or always related.  So the files can have a "Life of their own."  For this reason, it is not important to track the versions or state of all of the files together.
+
+How can you use the commands git log and git diff to view the history of files?
+    
+    git log will show all the commits in a specific repository.  It shows all the individual versions of collections of files.
+
+    git diff is used to see the differences between two commits.  It shows the changes between each file that was in a specific commit.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Having version control means that you can see the previous version of the code that WAS working, and also that you can revert back to that working version.  It also means you can see the exact differences between your current work and the last working version, which may help you find any bug that you may have inadvertently introduced.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    I plan on using Git initially for the Intro to HTML and CSS course. I will later use it for the whole Front-end web developer Nanodegree, and then eventually for websites that I will be developing for some groups I am part of.
