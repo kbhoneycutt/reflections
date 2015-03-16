@@ -25,6 +25,8 @@ organized? How would branches help?
 	
 How do the diagrams help you visualize the branch structure?
 
+	The diagrams show each commit as a node in the graph, and the parent of each commit.  The branches are shown as limbs that branch off of the main branch, and show the commits in that branch.  In using the graph like this, one is able to see if a particular commit can be reached from another commit, or in other words whether a commit is orphaned or lost.  The diagrams are basically a directed graph, or tree.  The diagrams also make it apparent where a merge may be needed.
+
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
