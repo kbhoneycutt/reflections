@@ -32,5 +32,9 @@ the diagram the way we do?
 
 	When merging two branches, the source in one branch is merged with another branch, resulting in a single branch or baseline.  This new merge point is then a new commit for the branch being merged into.  It's represented this way in the diagram to signify that one branch moves into another one, and the merge point is a "commit" node in the branch merged into.
 	
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+	The Pros of Git's automatic merging is that it takes the tedium out of copying changes into files.  It elminiates the possiblity of missing some changes, and greatly speeds up the process.  The Con is that it is not able to merge all changes, and sometimes finds conflicts if two users have modified the same file in the same place.  In this case, it does report the conflict and lets the user manually merge the changes.  The user is an expert in the content, and can better figure out the end result whereas Git cannot.
+
+	The cons to manually merging files is that it is prone to human error.  First a user may not see all the changes, and might miss some.  But the pro of it is that if the user does see all the conflicts and changes, there is little chance of a change (merge) that does not make sense getting introduced to the code.
