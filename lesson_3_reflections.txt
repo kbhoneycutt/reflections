@@ -11,7 +11,9 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    You would want to always pull changes manually because having Git automatically stay up-to-date with the remote repository may introduce changes you are unable to deal with.  You may be in the process of editing a file, or even have it staged to commit, and then Git downloads a change that is in conflict with your change. And for the work you are doing, you may need to have a constant state of what the master is. If git is pulling changes constantly to stay up-to-date, you may not be able to tell what the current state of the master is.
+
+    If you are working on a project with many collaborators, your system could also wind up pulling down lots of changes frequently, thus chewing up local resources (bandwidth, CPU time, disk I/O time, etc.) that you really need for the work you are doing.
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
